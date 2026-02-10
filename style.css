@@ -1,0 +1,32 @@
+/****************** Reset **************/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/****************** Fonts **************/
+
+/****************** Mobil **************/
+
+/****************** Desktop **************/
+
+@media (min-width: 1200px) {
+  .grid_4col_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    img {
+      align-self: stretch;
+      object-fit: cover;
+    }
+  }
+
+  .billede1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .billede4 {
+    grid-column: span 2;
+  }
+}
